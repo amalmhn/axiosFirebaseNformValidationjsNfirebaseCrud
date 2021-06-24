@@ -23,18 +23,18 @@ function App() {
       // }
       // The above code is to post the data to firebase database
 
-      // {
-      //   Firebase.firestore().collection('products').doc('WOJStsUcl7mKCLkVIxc3').delete().then(
-      //     console.log("Deleted")
-      //   )
-      // }
+      {
+        Firebase.firestore().collection('products').delete().then(
+          console.log("Deleted")
+        )
+      }
       // The above code is to delete the data from firebase database as per id
 
-      {
-        Firebase.firestore().collection('products').doc('WY5hNPrbXxKc1PvyySqg').set({
-          name:'updated'
-        })
-      }
+      // {
+      //   Firebase.firestore().collection('products').doc('WY5hNPrbXxKc1PvyySqg').set({
+      //     name:'updated'
+      //   })
+      // }
       }>Click</button>
     </div>
   );

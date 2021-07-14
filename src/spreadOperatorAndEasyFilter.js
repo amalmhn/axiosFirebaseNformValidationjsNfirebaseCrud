@@ -27,9 +27,9 @@ function App1() {
       console.log(all[0].name.substr(62))
       // setDatas([...all,{id:all[0].name.substr(62)}])
       const all4 = all.map((k)=>{
-        console.log(k)
+        console.log(k.name)
         return{
-          ...k,id:all[0].name.substr(62)
+          ...k,id:k.name.substr(62)
         }
       })
       console.log(all4)
